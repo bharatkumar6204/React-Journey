@@ -118,8 +118,12 @@ const App = () => {
 
   return (
     <div className='parent'>
-      {jobs.map(function(elem){
-        return <Card image={elem.image} comp={elem.company} post={elem.role} type={elem.type} level={elem.level} posted={elem.posted} salary={elem.salary} location={elem.location} />
+      {jobs.map(function(elem,idx){
+        return <div key={idx}>
+          <Card image={elem.image} comp={elem.company} post={elem.role} type={elem.type} level={elem.level} posted={elem.posted} salary={elem.salary} location={elem.location} />
+        </div>
+        
+        
       })}
       
     </div>
