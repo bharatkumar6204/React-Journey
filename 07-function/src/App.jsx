@@ -17,22 +17,38 @@
 // export default App
 
 // Button click par value print karna ho
-let name = "";
+// let name = "";
+
+// const App = () => {
+//   function inputChnage(e) {
+//     name = e.target.value;
+//   }
+//   function btnClicked() {
+//     console.log(name);
+//   }
+//   return (
+//     <div className="text">
+//       <input onChange={inputChnage} type="text" placeholder="Enter Your Name" />
+
+//       <button onClick={btnClicked}>Click</button>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+import React from 'react'
 
 const App = () => {
-  function inputChnage(e) {
-    name = e.target.value;
-  }
-  function btnClicked() {
-    console.log(name);
+  function btnClicked(){
+    console.log('button clicked');
+    
   }
   return (
-    <div className="text">
-      <input onChange={inputChnage} type="text" placeholder="Enter Your Name" />
-
+    <div>
       <button onClick={btnClicked}>Click</button>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
