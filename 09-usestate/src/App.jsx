@@ -18,7 +18,6 @@ import { useState } from "react"
 // export default App
 
 
-
 const App = () => {
 
 const [user, setUser] = useState('raju')
