@@ -2,11 +2,10 @@ import { useState } from "react"
 
 
 const App = () => {
- // change value 10 se 30 use useState
+
   const [num, setNum] = useState(10)
   function changeNum(){
-    setNum(30)
-    
+    setNum(30) 
   }
   return (
     <div>
