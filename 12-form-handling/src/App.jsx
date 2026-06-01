@@ -1,17 +1,18 @@
+// Form Handling
 
 const App = () => {
   const submitHandler = (e)=>{
     e.preventDefault()
     console.log('Form Submit');
+    
   }
   return (
     <div>
       <form onSubmit={(e)=>{
         submitHandler(e)
       }}>
-        <input type="text" placeholder="Enter your name" />
-        <button>Submit</button>
-
+      <input type="text" placeholder="Enter your name" />
+      <button>Submit</button>
       </form>
     </div>
   )
