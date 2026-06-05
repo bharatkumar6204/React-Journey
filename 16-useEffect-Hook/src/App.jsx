@@ -50,9 +50,10 @@ const App = () => {
     
   }
   useEffect(function(){
-    console.log('useEffect is running...');
+    bChanging()
     
-  })
+    
+  },[b])
 
   return (
     <div>
